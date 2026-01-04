@@ -1,16 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a sample HTML document for revision purposes.">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="This is a login page with backend functionality.">
+    <meta name="keywords" content="HTML, CSS, JavaScript,python(django), login, backend">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href=".css">
     <script src=""></script>
-    <title>revision</title>
+    <title>login page</title>
 </head>
+
 <body>
-    
+    <form action="">
+        <h1>LOGIN</h1>
+        <div>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div>
+            <label for="date of birth">data of birth</label><br>
+            <input type="date" name="dob" id="dob" required>
+        </div>
+        <div>
+            <label for="18+">18+</label>
+            <input type="checkbox" name="age" id="age" required>
+        </div>
+        <div>
+    <label>Gender</label><br>
+
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label>
+
+    <input type="radio" id="other" name="gender" value="other" required>
+    <label for="other">Other</label>
+</div>
+
+    </form>
 </body>
+
 </html>
