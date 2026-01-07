@@ -3,9 +3,6 @@
     padding: 0%;
     box-sizing: border-box;
 }
-body{
-    
-}
 body::before{
     content: "";
     background: url(pexels-pixabay-462162.jpg);
