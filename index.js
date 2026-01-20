@@ -28,3 +28,9 @@ document.querySelector("form").addEventListener("submit", async (e) => {
     alert("Invalid email or password");
   }
 });
+const passwordInput = document.getElementById('password');
+const showPassword = document.getElementById('showPassword');
+
+showPassword.addEventListener('change', () => {
+    passwordInput.type = showPassword.checked ? 'text' : 'password';
+});
