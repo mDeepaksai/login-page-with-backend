@@ -60,14 +60,17 @@ input{
     border-radius: 15px;
     border: 1px solid black;
 }
-input[type="email"],
-input[type="password"] {
+#email {
     width: 300px;
 }
 
-input[type="checkbox"] {
+#showPassword {
     width: auto;
 }
+#password {
+    width: 300px;
+}
+
 .forgot-password{
     margin-left: 80px;
     font-size: 15px;
