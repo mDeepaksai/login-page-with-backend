@@ -36,52 +36,69 @@ main {
     /* backdrop-filter: blur(5px); */
     box-shadow: 20px 20px 5px 5px rgba(255, 255, 255, 0.5);
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-header{
+
+header {
     margin: 60px;
     padding: 10px;
 }
-label{
+
+label {
     font-size: 20px;
     font-weight: normal;
 }
-.show{
+
+.show {
     font-size: 15px;
     font-weight: normal;
 }
-input{
+
+input {
     margin: 10px;
     padding: 10px;
     border-radius: 15px;
     border: 1px solid black;
 }
+
 #email {
     width: 300px;
+    transition: transform 0.5s ease-in;
+}
+
+#password {
+    width: 300px;
+    transition: transform 0.5s ease-in;
+}
+
+#email:hover,
+#password:hover, .login:hover , .google:hover {
+    transform: scale(1.05);
 }
 
 #showPassword {
     width: auto;
 }
-#password {
-    width: 300px;
-}
 
-.forgot-password{
+
+.forgot-password {
     margin-left: 80px;
     font-size: 15px;
     text-decoration: none;
     color: black;
 }
-.fors{
+
+.fors {
     margin: 10px;
     padding: 10px;
 }
-.login{
+
+.login {
     width: 300px;
     height: 40px;
     margin: 10px;
@@ -90,20 +107,25 @@ input{
     font-size: 18px;
     cursor: pointer;
     border: 1px solid black;
+    transition: transform 0.5s ease-in;
 }
-.sign-up{
+
+.sign-up {
     text-decoration: none;
     color: black;
     margin-left: 10px;
     padding: 10px;
 }
-.google{
+
+.google {
     width: 300px;
     margin: 50px;
     padding: 10px;
     cursor: pointer;
     border-radius: 30px;
+    transition: transform 0.5s ease-in;
 }
+
 .divider {
     display: flex;
     align-items: center;
@@ -112,6 +134,7 @@ input{
     font-size: 14px;
     color: #333;
 }
+
 .divider::before,
 .divider::after {
     content: "";
@@ -119,8 +142,8 @@ input{
     height: 2px;
     background-color: #040404;
 }
+
 .divider span {
     padding: 0 12px;
     white-space: nowrap;
 }
- 
