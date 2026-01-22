@@ -34,3 +34,9 @@ form.addEventListener("submit", async (e) => {
     alert(err.message);
   }
 });
+const passwordInput = document.getElementById('password');
+const showPassword = document.getElementById('showPassword');
+
+showPassword.addEventListener('change', () => {
+    passwordInput.type = showPassword.checked ? 'text' : 'password';
+});

@@ -1,40 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a new user registration page.">
     <meta name="keywords" content="HTML, CSS, JavaScript, python(django), new user, registration, backend">
     <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="newuser.css">
     <script type="module" src="newuser.js"></script>
-    <title>New User Registration</title>
+    <title>Sign Up</title>
 </head>
+
 <body>
-    <main>
-        <header>
-            <h1>Register</h1>
-            <p>Create your account by filling in the information below</p>
-        </header>
-        <section>
-            <form>
-                <div class="forn">
-                    <label for="username">Username</label><br>
-                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
-                </div><br>
-                <div class="fore">
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email" placeholder="mail@abc.com" required>
-                </div><br>
-                <div class="forp">
-                    <label for="password">Password</label><br>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                </div><br>
-                <div class="fors">
-                    <button type="submit"><a href="index.html"></a>Register</button>
-                </div><br>
-            </form>
-        </section>
+    <main class="container">
+
+        <div class="left">
+            <header>
+                <h1>Sign Up For Free</h1><br>
+                <p>Create your account and get started today!</p>
+            </header><br>
+
+            <section>
+                <form>
+                    <div>
+                        <label>Username</label><br>
+                        <input type="text" placeholder="Enter your username">
+                    </div><br>
+
+                    <div>
+                        <label>Email</label><br>
+                        <input type="email" placeholder="mail@abc.com">
+                    </div><br>
+
+                    <div>
+                        <label>Password</label><br>
+                        <input type="password" id="password" placeholder="Enter your password"><br>
+                        <input type="checkbox" id="showPassword">
+                        <label for="showPassword" class="show">Show Password</label>
+                    </div><br>
+                    <div>
+                        <button type="submit">
+                            Sign Up <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div><br>
+                    <div>
+                        <button type="submit">google</button>
+                        <button type="submit">Windows</button>
+                        <button type="submit">apple_user</button>
+                    </div><br>
+                    <p>Already have an account? <a href="index.html">Login</a></p>
+                </form>
+            </section>
+        </div>
+
+        <article>
+
+        </article>
+
     </main>
 </body>
+
 </html>

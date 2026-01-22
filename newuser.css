@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-areas:
+        "left article"
+        "left article";
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 1fr 1fr;
+        height: 100vh;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: left;
+    border: 2px solid black;
+}
+
+article{
+    grid-area: article;
+    border: 2px solid black;
+    padding: 20px;
+    position: relative;
+}
+article::before{
+    content:"";
+    background: url(pexels-giancarlo-principe-outdoor-adventures-2158906038-35760694.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
