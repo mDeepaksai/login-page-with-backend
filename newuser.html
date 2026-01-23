@@ -28,31 +28,31 @@
                 <form>
                     <div class="username">
                         <label>Username</label><br>
-                        <input type="text" placeholder="Enter your username">
+                        <input type="text" placeholder="Enter your username" required>
                     </div><br>
 
                     <div class="email">
                         <label>Email</label><br>
-                        <input type="email" placeholder="mail@abc.com">
+                        <input type="email" placeholder="mail@abc.com" required>
                     </div><br>
 
                     <div class="password">
                         <label>Password</label><br>
-                        <input type="password" id="password" placeholder="Enter your password"><br>
+                        <input type="password" id="password" placeholder="Enter your password" required><br>
                         <input type="checkbox" id="showPassword">
                         <label for="showPassword" class="show">Show Password</label>
                     </div><br>
                     <div>
-                        <button type="submit">
+                        <button type="submit" class="sign-up">
                             Sign Up <i class="fa-solid fa-arrow-right"></i>
                         </button>
                     </div><br>
                     <div>
-                        <button type="submit">google</button>
-                        <button type="submit">Windows</button>
-                        <button type="submit">apple_user</button>
+                        <button type="submit" class="another"><i class="fa-brands fa-google"></i></button>
+                        <button type="submit" class="another"><i class="fa-brands fa-windows"></i></button>
+                        <button type="submit" class="another"><i class="fa-brands fa-apple"></i></button>
                     </div><br>
-                    <p>Already have an account? <a href="index.html">Login</a></p>
+                    <p>Already have an account?<a href="index.html" class="back">Login</a></p>
                 </form>
             </section>
         </div>
