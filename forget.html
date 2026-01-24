@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a forget password page.">
     <meta name="keywords" content="HTML, CSS, JavaScript, python(django), forget password, backend">
     <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="forget.css">
     <title>Forget Password</title>
 </head>
+
 <body>
     <main>
-        <header>
-            <h1>Forget Password</h1>
-            <p>Enter your email to reset your password</p>
-        </header>
-        <section>
-            <form action="">
-                <div class="fore">
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email" placeholder="mail@abc.com" required>
-                </div><br>
-                <div class="fors">
-                    <button type="submit">Reset Password</button>
-                </div><br>
-            </form>
-        </section>
+        <div class="main">
+            <header>
+                <h1>Forget Password?</h1><br>
+                <p>No worries, we'll send you reset instruction</p>
+            </header><br>
+            <section>
+                <form action="">
+                    <div class="fore">
+                        <label for="email">Enter Your Email</label><br>
+                        <input type="email" id="email" name="email" placeholder="mail@abc.com" required>
+                    </div><br>
+                    <div class="fors">
+                        <button type="submit">Reset Password</button>
+                    </div><br>
+                    <div>
+                        <a href="index.html"><i class="fa-solid fa-arrow-left"></i>Back to login</a>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div class="submain">
+
+        </div>
     </main>
 </body>
+
 </html>
