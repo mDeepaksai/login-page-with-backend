@@ -29,7 +29,7 @@ article{
 }
 article::before{
     content:"";
-    background: url(pexels-giancarlo-principe-outdoor-adventures-2158906038-35760694.jpg);
+    background: url(pexels-rednguyen-29346994.jpg);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -38,7 +38,7 @@ article::before{
     width: 99%;
     height: 99%;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.9;
     border-radius: 100px;
     top: 5px;
 }
@@ -63,7 +63,7 @@ input{
     border: 2px solid black;
     font-size: 16px;
     background-color: rgb(255, 252, 252);
-    transition: transform 1s ease-out;
+    transition: transform 0.5s ease-out;
 }
 input[type="checkbox"]{
     width: auto;
@@ -88,7 +88,7 @@ button{
     height: 70px;
     border-radius: 15px;
     background-color: rgb(255, 252, 252);
-    transition: all 1s ease-out;
+    transition: all 0.5s ease-out;
 }
 .another:hover{
     border: 1px solid rgba(121, 246, 208, 0.84);
@@ -100,7 +100,7 @@ button{
     background-color: rgba(121, 246, 208, 0.84);
 }
 .back{
-    color: rgba(3, 255, 179, 0.84);
+    color: rgba(121, 246, 208, 0.84);
 }
 .fa-brands{
     font-size: 20px;

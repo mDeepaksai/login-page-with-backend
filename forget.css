@@ -56,3 +56,29 @@ header p{
     font-size: 15px;
     font-weight: normal;
 }
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.email, .password{
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.email{
+    padding: 10px;
+    transition: transform 0.5s ease-out;
+}
+.email:hover{
+    transform: scale(1.05);
+    border: 1px solid rgba(121, 246, 208, 0.84);
+}
+label{
+    font-size: 20px;
+}
+.back{
+    text-align: center;
+}
