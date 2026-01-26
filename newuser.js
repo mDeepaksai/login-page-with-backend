@@ -29,7 +29,7 @@ form.addEventListener("submit", async (e) => {
   try {
     await createUserWithEmailAndPassword(auth, email, password);
     alert("User registered successfully");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   } catch (err) {
     alert(err.message);
   }
