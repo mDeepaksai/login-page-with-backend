@@ -15,28 +15,33 @@ const auth = getAuth(app);
 
 const form = document.querySelector("form");
 
-form.addEventListener("submit", async (e) => {
+form.addEventListener("submit", async (e) =>
+{
   e.preventDefault();
 
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value;
 
-  if (!email || !password) {
+  if (!email || !password)
+  {
     alert("Email and password required");
     return;
   }
 
-  try {
+  try
+  {
     await createUserWithEmailAndPassword(auth, email, password);
     alert("User registered successfully");
     window.location.href = "index.html";
-  } catch (err) {
+  } catch (err)
+  {
     alert(err.message);
   }
 });
 const passwordInput = document.getElementById('password');
 const showPassword = document.getElementById('showPassword');
 
-showPassword.addEventListener('change', () => {
-    passwordInput.type = showPassword.checked ? 'text' : 'password';
+showPassword.addEventListener('change', () =>
+{
+  passwordInput.type = showPassword.checked ? 'text' : 'password';
 });

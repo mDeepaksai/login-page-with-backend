@@ -1,20 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-areas:
         "left article"
         "left article";
-        grid-template-columns: 2fr 3fr;
-        grid-template-rows: 1fr 1fr;
-        height: 100vh;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
 }
 
-.left{
+form {
+    background: white;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 20px 20px rgba(121, 246, 208, 0.84);
+}
+
+
+.left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,19 +30,20 @@
     grid-area: left;
 }
 
-article{
+article {
     grid-area: article;
     padding: 20px;
     position: relative;
 }
-article::before{
-    content:"";
+
+article::before {
+    content: "";
     background: url(pexels-rednguyen-29346994.jpg);
     background-size: cover;
     background-position: center;
     position: absolute;
     top: 0;
-    left: 0;    
+    left: 0;
     width: 99%;
     height: 99%;
     z-index: -1;
@@ -42,20 +51,24 @@ article::before{
     border-radius: 100px;
     top: 5px;
 }
-header{
+
+header {
     margin-bottom: 150px;
 }
-header h1{
+
+header h1 {
     font-size: 30px;
     font-weight: bolder;
     display: flex;
     justify-content: center;
 }
-header p{
+
+header p {
     font-size: 15px;
     font-weight: normal;
 }
-input{
+
+input {
     margin: 10px;
     padding: 10px;
     width: 300px;
@@ -63,26 +76,46 @@ input{
     border: 2px solid black;
     font-size: 16px;
     background-color: rgb(255, 252, 252);
-    transition: transform 0.5s ease-out;
+    transition: all 0.5s ease-out;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
     width: auto;
 }
-input:hover{
+
+input:hover {
     border: 1px solid rgba(121, 246, 208, 0.84);
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
-form{
+
+input:focus {
+    outline: none;
+    border: 2px solid #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateY(-70px); 
+    transform: translateY(-70px);
 }
-button{
+
+.showpassword {
+    display: flex;
+    flex-direction: row;
+}
+
+.show {
+    margin-top: 6px;
+}
+
+button {
     padding: 10px;
 }
-.another{
+
+.another {
     margin: 10px;
     width: 100px;
     height: 70px;
@@ -90,18 +123,37 @@ button{
     background-color: rgb(255, 252, 252);
     transition: all 0.5s ease-out;
 }
-.another:hover{
+
+.another:hover {
     border: 1px solid rgba(121, 246, 208, 0.84);
     transform: skewy(10deg);
 }
-.sign-up{
+
+.sign-up {
     border-radius: 15px;
     width: 300px;
     background-color: rgba(121, 246, 208, 0.84);
+    border: none;
+    transition: all 0.3s ease;
 }
-.back{
-    color: rgba(121, 246, 208, 0.84);
+
+.sign-up:hover {
+    background: #4338ca;
+    color: white;
+    transform: translateY(-2px);
 }
-.fa-brands{
+
+.back {
+    color: #4f46e5;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.back:hover {
+    text-decoration: underline;
+}
+
+.fa-brands {
     font-size: 20px;
 }
