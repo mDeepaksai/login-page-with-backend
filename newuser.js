@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword,GoogleAuthProvider,signInWithPopup } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-auth.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyA8Vm0bP5bbMtA9YEKT-p1gh7WyiTkZl5M",
@@ -12,6 +12,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
 
 const form = document.querySelector("form");
 
@@ -44,4 +45,18 @@ const showPassword = document.getElementById('showPassword');
 showPassword.addEventListener('change', () =>
 {
   passwordInput.type = showPassword.checked ? 'text' : 'password';
+});
+const googleBtn = document.querySelector("#google");
+
+googleBtn.addEventListener("click", async () => {
+  try {
+    const result = await signInWithPopup(auth, provider);
+    const user = result.user;
+
+    alert(`Welcome ${user.displayName}`);
+    console.log("Google User:", user);
+  } catch (error) {
+    console.error(error);
+    alert("Google sign-in failed");
+  }
 });
