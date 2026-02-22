@@ -158,3 +158,85 @@ input:focus {
     padding: 0 12px;
     white-space: nowrap;
 }
+/* ===== RESPONSIVE FOR MOBILE ===== */
+
+@media (max-width: 480px) {
+    main {
+        border-radius: 30px;
+        padding: 10px 5px;
+        width: 95%;
+        box-shadow: 10px 10px 5px 2px rgba(255, 255, 255, 0.5);
+    }
+
+    header {
+        margin: 30px 20px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    #email,
+    #password {
+        width: 240px;
+    }
+
+    .forgot-password {
+        margin-left: 20px;
+        font-size: 13px;
+    }
+
+    .login {
+        width: 240px;
+        font-size: 16px;
+    }
+
+    .google {
+        width: 240px;
+        margin: 20px;
+        font-size: 14px;
+    }
+
+    .divider {
+        width: 240px;
+    }
+
+    .sign-up {
+        padding: 5px;
+    }
+
+    .fors p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 360px) {
+    #email,
+    #password {
+        width: 200px;
+    }
+
+    .login,
+    .google {
+        width: 200px;
+    }
+
+    .divider {
+        width: 200px;
+    }
+
+    .forgot-password {
+        margin-left: 5px;
+    }
+}
