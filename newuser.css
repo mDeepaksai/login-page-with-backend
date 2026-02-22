@@ -184,3 +184,124 @@ button {
 .fa-brands {
     font-size: 20px;
 }
+/* ===== RESPONSIVE FOR MOBILE ===== */
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            "left"
+            "article";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    article {
+        height: 300px;
+        padding: 15px;
+        order: -1; /* image slider appears on top */
+    }
+
+    .slider {
+        border-radius: 20px;
+    }
+
+    .left {
+        padding: 20px 10px;
+    }
+
+    header {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    form {
+        transform: translateY(0);
+        padding: 25px 20px;
+        width: 100%;
+    }
+
+    input {
+        width: 260px;
+    }
+
+    .sign-up {
+        width: 260px;
+    }
+
+    .another {
+        width: 80px;
+        height: 55px;
+        margin: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    article {
+        height: 220px;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    form {
+        padding: 20px 10px;
+        box-shadow: 0 10px 15px rgba(121, 246, 208, 0.6);
+    }
+
+    input {
+        width: 220px;
+        font-size: 14px;
+    }
+
+    .sign-up {
+        width: 220px;
+        font-size: 14px;
+    }
+
+    .another {
+        width: 65px;
+        height: 50px;
+        margin: 4px;
+    }
+
+    .nav {
+        font-size: 18px;
+        padding: 7px 10px;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    input {
+        width: 190px;
+    }
+
+    .sign-up {
+        width: 190px;
+    }
+
+    .another {
+        width: 55px;
+        height: 45px;
+        margin: 3px;
+    }
+}

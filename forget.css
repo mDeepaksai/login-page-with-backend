@@ -156,3 +156,107 @@ label {
 .back a:hover {
     text-decoration: underline;
 }
+/* ===== RESPONSIVE FOR MOBILE ===== */
+
+@media (max-width: 768px) {
+    main {
+        grid-template-areas:
+            "main2"
+            "main1";
+        grid-template-columns: 1fr;
+        grid-template-rows: 280px auto;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .submain {
+        height: 280px;
+        padding: 15px;
+    }
+
+    .slider {
+        border-radius: 20px;
+    }
+
+    .main {
+        transform: translateY(0);
+        padding: 40px 20px;
+        justify-content: flex-start;
+        padding-top: 50px;
+    }
+
+    header {
+        transform: translateY(0);
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .email,
+    .password {
+        width: 260px;
+    }
+
+    label {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        grid-template-rows: 220px auto;
+    }
+
+    .submain {
+        height: 220px;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 13px;
+    }
+
+    .email,
+    .password {
+        width: 220px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    .hint {
+        font-size: 12px;
+    }
+
+    .nav {
+        font-size: 18px;
+        padding: 7px 10px;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .email,
+    .password {
+        width: 190px;
+    }
+}
